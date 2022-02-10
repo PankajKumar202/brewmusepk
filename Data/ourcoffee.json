@@ -1,0 +1,81 @@
+[
+    {   
+        "_id":1,
+        "name": "India Estates Blend",
+        "img_url": "https://i.ibb.co/y0Chtq4/India-Estate-Whole.webp",
+        "roast": "MEDIUM ROAST",
+        "format": "Whole Bean",
+        "flavoured": "unflavoured",
+        "caffeine": "Regular",
+        "taste": "Choclate & Herbal",
+        "opt_id":10,
+        "desc": "You're holding a bit of history—the first Starbucks® coffee from India.Cultivated in Karnataka in harmony with nature, the lush and layered coffee captivates from first sip. In the dappled light beneath shade trees, the gently sloping land and fertile red soil yield the finest Indian coffee we've ever experienced. Our master roasters lovingly revealed its distinctive complexity—lush herbal notes, hints of citrus and a chocolaty mouthfeel.",
+        "store": "Starbucks Stores"
+    },
+    {
+        "_id":2,
+        "name": "Kenya",
+        "img_url": "https://i.ibb.co/yprBN43/Kenya.png",
+        "roast": "MEDIUM ROAST",
+        "format": "Whole Bean",
+        "flavoured": "unflavoured",
+        "caffeine": "Regular",
+        "opt_id":9,
+        "taste": "Juicy & Complex",
+        "desc": "And big – awash with a full-bodied juiciness that makes it instantly recognizable to its many, many fans. These qualities are all true of our Kenya coffee. You can recognize Kenya through its tell-tale citrus flavours – grapefruit most often, but sometimes lemon and sometimes tart orange. There’s a sparkle to this coffee, a bright acidity, that makes it so refreshing to drink. In fact, it's a terrific iced coffee on a hot summer day.",
+        "store": "Starbucks Stores"
+    },
+    {
+        "_id":3,
+        "name": "Fair Trade Certified™ Italian Roast",
+        "img_url": "https://i.ibb.co/TH0KJfz/fair-trade-Whole.png",
+        "roast": "DARK ROAST",
+        "format": "Whole Bean",
+        "flavoured": "unflavoured",
+        "caffeine": "Regular",
+        "opt_id":8,
+        "taste": "Roasty & Sweet",
+        "desc": "That’s an apt description of our favourite way to enjoy Italian Roast – just ourselves, two cups, and an afternoon to spare. This coffee gets its distinctive sweetness from the way it is roasted: dark, and darker still. Somewhere beyond the caramel notes of our Espresso Roast but short of the smokiness that identifies our French Roast – that is the sweet spot held by Italian Roast. What is created after the coffee cools is a sturdy and sweet blend, potent and intense.",
+        "store": "Starbucks Stores"
+    },
+    {
+        "_id":4,
+        "name": "Sumatra",
+        "img_url": "https://i.ibb.co/CPNy1CF/Sumatra-Whole.png",
+        "roast": "DARK ROAST",
+        "format": "Whole Bean",
+        "flavoured": "unflavoured",
+        "caffeine": "Regular",
+        "taste": "Earthy & Herbal",
+        "desc": "A pound a week, in fact. And it may interest you to know that this coffee is the one single-origin offering that we most often choose to enjoy at home, after we take off the green apron. Why do we love it so? It has a full, buttery body with virtually no acidity, so the coffee’s intensity and flavour simply lingers on your tongue. Make no mistake, this is a slurping coffee. At its best, there’s no mistaking the concentrated herbal notes and earthy aroma – telltale marks this beloved brew have left on our shirts and our hearts.",
+        "store": "Starbucks Stores",
+        "opt_id":10
+        
+    },
+    {
+        "_id":5,
+        "name": "Colombia",
+        "img_url": "https://i.ibb.co/YWbLTsK/Columbia-Via.webp",
+        "roast": "MEDIUM ROAST",
+        "format": "VIA",
+        "flavoured": "unflavoured",
+        "caffeine": "Regular",
+        "taste": "Balanced & Nutty",
+        "desc": "Six thousand feet – straight up. Sounds extreme, we know. But high atop the majestic Andes, in a rugged landscape of simmering volcanoes, is where the finest coffee beans in Colombia like to grow. And just as there are no shortcuts through the dirt paths that crisscross the sheer slopes, we take none when it comes to nurturing these treasured cherries to gourmet perfection.This Colombian marvel erupts on the palate with a juicy feel and robust flavors, a testament to the hearty riches of volcanic soils. Its remarkable finish, dry with hints of walnut, lifts this superior coffee into a class of its own. One sip and you’ll agree it’s worth every step of the climb.",
+        "store": "Starbucks Stores",
+        "opt_id":9
+    },
+    {
+        "_id":6,
+        "name": "Fair Trade Certified™ Italian Roast",
+        "img_url": "https://i.ibb.co/TH0KJfz/fair-trade-Whole.png",
+        "roast": "DARK ROAST",
+        "format": "VIA",
+        "flavoured": "unflavoured",
+        "caffeine": "Regular",
+        "taste": "Roasty & Sweet",
+        "desc": "Now you can enjoy our bold and roasty-sweet Italian Roast in an instant. Just tear open a pack of Starbucks VIA® Ready Brew and add water. Let the coffee brew 10 seconds, stir, savor and enjoy.It’s not instant coffee the way you know it. This is genuine, dark-roasted Starbucks® coffee. 100% arabica and ethically sourced. Isn’t it wonderful? There’s now an instant coffee that you can start a whole new tradition with.",
+        "store": "Starbucks Stores",
+        "opt_id":8
+    }
+]

@@ -1,0 +1,74 @@
+[
+    {
+        "opt_id":1,
+        "name":"Savory",
+        "img_url":"https://i.ibb.co/FYFM3TL/Savory.png",
+        "finder_id":1
+
+    },
+    {
+        "opt_id":2,
+        "name":"Fruity",
+        "img_url":"https://i.ibb.co/GVTG5zK/Fruity.png",
+        "finder_id":1
+
+    },
+    {
+        "opt_id":3,
+        "name":"Toasted",
+        "img_url":"https://i.ibb.co/kqsyvdm/TOASTED.png",
+        "finder_id":1
+
+    },
+    {
+        "opt_id":4,
+        "name":"Caramelized",
+        "img_url":"https://i.ibb.co/KF3wKYr/CARAMELIZED.png",
+        "finder_id":1
+
+    },
+    {
+        "opt_id":5,
+        "name":"Crisp",
+        "img_url":"https://i.ibb.co/8MM9RNf/CRISP.png",
+        "finder_id":2
+
+    },
+    {
+        "opt_id":6,
+        "name":"Smooth",
+        "img_url":"https://i.ibb.co/R3F2g12/SMOOTH.png",
+        "finder_id":2
+
+    },
+    {
+        "opt_id":7,
+        "name":"Rich",
+        "img_url":"https://i.ibb.co/cN3Txk3/Rich.png",
+        "finder_id":2
+
+    },
+    {
+        "opt_id":8,
+        "name":"Subtle & soft",
+        "img_url":"https://i.ibb.co/qpf5mFy/Subtle-soft.png",
+        "finder_id":3
+
+    },
+    {
+        "opt_id":9,
+        "name":"Medium & Balanced",
+        "img_url":"https://i.ibb.co/prKBdTt/Med-Bal.png",
+        "finder_id":3
+
+    },
+    {
+        "opt_id":10,
+        "name":"Intense & Robust",
+        "img_url":"https://i.ibb.co/mz539LF/Intense-Robust.png",
+        "finder_id":3
+
+    }
+
+
+]

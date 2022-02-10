@@ -1,0 +1,17 @@
+{
+  "name": "brewmuseapi",
+  "version": "1.0.0",
+  "description": "This contain brewmuse api",
+  "main": "app.js",
+  "scripts": {
+   "start":"node app.js",
+   "dev":"nodemon app.js"
+  },
+  "author": "Falguni and Pankaj",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "express": "^4.17.2",
+    "mongodb": "^4.3.1"
+  }
+}

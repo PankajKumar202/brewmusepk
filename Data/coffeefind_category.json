@@ -1,0 +1,14 @@
+[
+    {
+        "finder_id":1,
+        "name":"Flavor"
+    },
+    {
+        "finder_id":2,
+        "name":"Sensation"
+    },
+    {
+        "finder_id":3,
+        "name":"Intense"
+    }
+]
