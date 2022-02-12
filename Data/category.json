@@ -1,77 +1,77 @@
   [
     {
-    "_id":1,
+  
     "category_id": 1,
     "category":"Featured Beverages"
   },
   {
-  "_id":2,
+
   "category_id": 2,
   "category":"Freshly Brewed Coffee"
   },
   {
-  "_id":3,
+
   "category_id": 3,
   "category":"Crème Frappuccino®"
   },
   {
-  "_id":4,
+
   "category_id": 4,
   "category":"Cold Brew"
   },
   {
-  "_id":5,
+
   "category_id":5 ,
   "category":"Iced Shaken"
   },
   {
-  "_id":6,
+
   "category_id":6,
   "category":"Espresso"
   },
   {
-    "_id":7,
+  
     "category_id":7 ,
     "category":"Coffee Frappuccino®"
     },
     {
-      "_id":8,
+    
       "category_id":8,
       "category":"Other Beverages"
       },
       {
-        "_id":9,
+      
         "category_id":9,
         "category":"Teavana® Tea"
         },
   
   {
-      "_id":10,
+      
       "category_id": 10,
       "category":"Featured Food"
   },
   {
-    "_id":11,
+    
     "category_id": 11,
     "category":"Savory Bakery"
   },
   {
-    "_id":12,
+    
     "category_id": 12,
     "category":"Salads & Muesli"
   },
   {
-    "_id":13,
+    
     "category_id":13 ,
     "category":"Sweet Bakery"
   },
   {
-    "_id":14,
+    
     "category_id":14 ,
     "category":"Sandwiches & Wraps"
   },
   {
-    "_id":15,
+    
     "category_id":15 ,
     "category":"Desserts"
   }

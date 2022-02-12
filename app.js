@@ -42,30 +42,40 @@ app.get('/ourcoffee/:id',(req,res)=>{
         res.send(result);
     })
 })
-// Menu By Coffee 
-app.get('/Coffee/:id',(req,res)=>{
+// coffee and food by Menu
+app.get('/item/:id',(req,res)=>{
 let categoryID=Number(req.params.id);
 console.log(">>>>>categoryID",categoryID);
 
-db.collection('coffee').find({"category_id":categoryID}).toArray((err,result)=>{
+db.collection('Menu').find({"category_id":categoryID}).toArray((err,result)=>{
     if(err) console.log(err)
     res.send(result);
 })
 })
-// filter for coffee
-app.get('/filter',(req,res)=>{
+// filter 
+app.get('/filter/:id',(req,res)=>{
+    let categoryID=Number(req.params.id);
+    console.log(">>>>>categoryID",categoryID);
     let item_type=req.query.type;
-    let brate=Number(req.query.brate);
-    let arate=Number(req.query.arate);
+   let sort={Ratings:1}
+   let bprice=Number(req.query.bprice); //below price = 300
+    let aprice=Number(req.query.aprice);//above price = 300
+    let Ratings=Number(req.query.Ratings);//above price = 300
+    let query={}
+    if(sort){
+        sort={Ratings:req.query.sort}
+    }
      if(item_type){
         query={type:item_type}
-    }else if(brate){
-        query={Ratings:{$lte:brate}}
+    }else if(bprice){
+        query={Price:{$lte:bprice}}
        
-    }else if(arate){
-        query={Ratings:{$gte:arate}}
+    }else if(aprice){
+        query={Price:{$gte:aprice}}
+    }else if(Ratings){
+        query={Ratings:Ratings}
     }
-    db.collection('coffee').find(query).toArray((err,result)=>{
+    db.collection('Menu').find({"category_id":categoryID},{query}).sort(sort).toArray((err,result)=>{
         if(err) throw err;
         res.send(result)
     })
@@ -76,28 +86,46 @@ app.get('/filter',(req,res)=>{
 // Careers wrt city keyword
 app.get('/jobs',(req,res)=>{
     let cityId = Number(req.query.city_id);
-    // let cityname = req.query.cityname;
+    let cityname = req.query.city_name;
+    let profile = req.query.profile;
     let query = {};
-    console.log("cityId>>>>",cityId);
-    if(cityId){
-        query = {
-            city_id:cityId,
-            // city_name:cityname
+    if(cityId && profile){
+        query = {city_id:cityId,
+            profile:profile
+            };
+    }
+    else if(cityname && profile){
+        query = {city_name:cityname,
+            profile:profile
         };
     }
-    // else if(cityId){
-    //     query = {city_id:cityId};
-    // }
-    // else if(cityname){
-    //     query = {city_name:cityname};
-    // }
-
+    else if(cityId){
+        query = {city_id:cityId};
+    }
+    else if(cityname){
+        query = {city_name:cityname};
+    }
+    else if(profile){
+        query = {profile:profile};
+    }
+    console.log("cityId>>>>",cityId);
     db.collection('jobs').find(query).toArray((err,result)=>{
-        if(err) throw err
+        if(err) throw err;
         res.send(result);
     })
 })
+// gift cards
+app.get("/cards/:id",(req,res)=>{
+    let card_id=Number(req.params.id);
+  
+    console.log(">>>>giftID",card_id)
+    db.collection('gift').find({"gift_id":card_id}).toArray((err,result)=>{
+        if(err) throw err;
+        res.send(result);    
+    })
+})
 
+// ADD Route
 
 MongoClient.connect(mongoUrl,(err,connection)=>{
     if(err) throw err;
