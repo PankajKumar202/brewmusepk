@@ -1,3 +1,4 @@
+//Website Vision
 Landing page => No required Api to fetch data dynamically (only weather api).
 Find a Store => geolocation Api and store location w.r.t user location / By city.
 Menu => Coffee name and its image w.r.t its category (Coffee/Food)
@@ -6,6 +7,7 @@ Rewards=> Gift Cards(Api) and Rewards.
 Starbucks Delivers => Menu Api  and geolocation.
                     =>Add to cart.
                     =>Buy now.
+
 >>>Page 1
 >>>Find a store
 >>>#working
@@ -56,13 +58,13 @@ Jobs w.r.t Keyword/Profile = http://localhost:4879/jobs?profile=Apprentice
 >>> Working
 >>>local links
 >>>Type=veg/nonveg
-http://localhost:4879/filter?type=Vegetarian
->>>Price like less than and greater than equal to 300
-for below 300 = http://localhost:4879/filter?bprice=300
-for above 300 = http://localhost:4879/filter?aprice=300
->>>>Sort of rating from loq to high and vice versa
-it would by default in ascending order localhost:4879/filter/1?Ratings
-but in descending order localhost:4879/filter.sort=-1 
+http://localhost:4879/filter/10?type=Non-Vegetarian
+http://localhost:4879/filter/1?type=Vegetarian
+>>>Price like less than 500 and greater than  300
+local link=localhost:4879/filter/1?bprice=300&aprice=500
+>>>>Sort of rating from low to high and vice versa
+local link=localhost:4879/filter/1?arate=3&brate=5
+but in descending order local link = localhost:4879/filter/1?arate=3&brate=5.sort=-1 
 
 <!-- rewards -->
 gift cards
@@ -84,6 +86,14 @@ local link=http://localhost:4879/placegiftOrder
 local link="http://localhost:4879//deletegiftOrder"
 <!-- for Updating Order -->
 local link=http://localhost:4879/updategiftOrder/62096056d7e9477ae6100660?status=Success
+
+
+// Api for name animation
+local link=http://localhost:4879/name
+
+//for fetching name
+local link=http://localhost:4879/fetchName/620a86a761236b3d86c70509
+
 
 
 

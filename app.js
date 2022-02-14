@@ -63,24 +63,28 @@ app.get('/filter/:id',(req,res)=>{
     console.log(">>>>>categoryID",categoryID);
     let item_type=req.query.type;
    let sort={Ratings:1}
-   let bprice=Number(req.query.bprice); //below price = 300
-    let aprice=Number(req.query.aprice);//above price = 300
-    let Ratings=Number(req.query.Ratings);//above price = 300
+   let bprice=Number(req.query.bprice);  
+    let aprice=Number(req.query.aprice);
+    let arate=Number(req.query.arate);
+    let brate=Number(req.query.brate);
     let query={}
     if(sort){
         sort={Ratings:req.query.sort}
     }
-     if(item_type){
-        query={type:item_type}
-    }else if(bprice){
-        query={Price:{$lte:bprice}}
-       
-    }else if(aprice){
-        query={Price:{$gte:aprice}}
-    }else if(Ratings){
-        query={Ratings:Ratings}
+    if(bprice&aprice){
+        query={$and:[{Price:{$gt:bprice,$lt:aprice}}],category_id:categoryID}
     }
-    db.collection('Menu').find({"category_id":categoryID},{query}).sort(sort).toArray((err,result)=>{
+    if(arate){
+        query={Ratings:{$gte:arate},category_id:categoryID}
+    }else if(brate){
+        query={Ratings:{$lte:brate},category_id:categoryID}
+    }
+     if(item_type){
+        query={type:item_type,category_id:categoryID}
+    }
+       
+    
+    db.collection('Menu').find(query).sort(sort).toArray((err,result)=>{
         if(err) throw err;
         res.send(result)
     })
@@ -115,6 +119,22 @@ app.get('/jobs',(req,res)=>{
     }
     console.log("cityId>>>>",cityId);
     db.collection('jobs').find(query).toArray((err,result)=>{
+        if(err) throw err;
+        res.send(result);
+    })
+})
+// Api for name animation
+app.post('/name',(req,res)=>{
+    db.collection('names').insert(req.body,(err,result)=>{
+        if(err) throw err;
+        res.send(result);
+    })
+})
+
+// Fetching name for animation from database
+app.get('/fetchName/:id',(req,res)=>{
+    let userId = mongo.ObjectId(req.params.id);
+    db.collection('names').find({_id:userId}).toArray((err,result)=>{
         if(err) throw err;
         res.send(result);
     })
@@ -177,7 +197,7 @@ app.put('/updategiftOrder/:id',(req,res)=>{
 app.post(`/placeOrder`,(req,res)=>{
     // let Oid=mongo.ObjectId(req.params.id);
  
-    db.collection('ordersmenu').insertOne(req.body,(err,result)=>{
+    db.collection('ordersmenu').insertOne(req.body,'UTF-8',(err,result)=>{
         if(err) throw err;
         res.send("Order Added");
     })

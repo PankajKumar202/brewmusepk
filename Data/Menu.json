@@ -8,32 +8,32 @@
         "Ratings": 4.5,
         "allergen": "Contains - Milk & Soy",
         "type": "Vegetarian",
+        "Price": 345,
         "size": [
             {
                 "name": "Short",
                 "inStock": true,
-                "Price": 345,
                 "serving_size": "237ml",
                 "nutritional_value": "187Kcal"
             },
             {
                 "name": "Tall",
                 "inStock": true,
-                "Price": 370,
+                "Additional_Price": 25,
                 "serving_size": "354ml",
                 "nutritional_value": "294Kcal"
             },
             {
                 "name": "Grande",
                 "inStock": true,
-                "Price": 399,
+                "Price": 54,
                 "serving_size": "473ml",
                 "nutritional_value": "386Kcal"
             },
             {
                 "name": "Venti",
                 "inStock": true,
-                "Price": 445,
+                "Additional_Price": 100,
                 "serving_size": "591ml",
                 "nutritional_value": "497Kcal"
             }
@@ -147,26 +147,26 @@
         "category_id": 1,
         "allergen": "Contains - Milk & Soy",
         "Ratings": 4.2,
+        "Price": 399,
         "type": "Vegetarian",
         "size": [
             {
                 "name": "Tall",
                 "inStock": true,
-                "Price": 424,
                 "serving_size": "354ml",
                 "nutritional_value": "225Kcal"
             },
             {
                 "name": "Grande",
                 "inStock": true,
-                "Price": 445,
+                "Additional_Price": 46,
                 "serving_size": "473ml",
                 "nutritional_value": "310Kcal"
             },
             {
                 "name": "Venti",
                 "inStock": true,
-                "Price": 475,
+                "Additional_Price": 76,
                 "serving_size": "591ml",
                 "nutritional_value": "363Kcal"
             }
@@ -308,25 +308,25 @@
         "allergen": "Contains - Milk & Soy",
         "Ratings": 4.2,
         "type": "Vegetarian",
+        "Price": 424,
         "size": [
             {
                 "name": "Tall",
                 "inStock": true,
-                "Price": 424,
                 "serving_size": "354ml",
                 "nutritional_value": "348Kcal"
             },
             {
                 "name": "Grande",
                 "inStock": true,
-                "Price": 445,
+                "Additional_Price":46,
                 "serving_size": "473ml",
                 "nutritional_value": "591Kcal"
             },
             {
                 "name": "Venti",
                 "inStock": true,
-                "Price": 475,
+                "Additional_Price": 76,
                 "serving_size": "591ml",
                 "nutritional_value": "664Kcal"
             }
@@ -461,32 +461,32 @@
         "allergen": "Contains - Nuts",
         "Ratings": 4.0,
         "type": "Vegetarian",
+        "Price": 345,
         "size": [
             {
                 "name": "Short",
                 "inStock": true,
-                "Price": 345,
                 "serving_size": "237ml",
                 "nutritional_value": "129Kcal"
             },
             {
                 "name": "Tall",
                 "inStock": true,
-                "Price": 370,
+                "Additional_Price":25,
                 "serving_size": "354ml",
                 "nutritional_value": "237Kcal"
             },
             {
                 "name": "Grande",
                 "inStock": true,
-                "Price": 399,
+                "Additional_Price":54,
                 "serving_size": "473ml",
                 "nutritional_value": "332Kcal"
             },
             {
                 "name": "Venti",
                 "inStock": true,
-                "Price": 445,
+                "Additional_Price":100,
                 "serving_size": "591ml",
                 "nutritional_value": "428Kcal"
             }
@@ -566,26 +566,26 @@
         "category_id": 1,
         "allergen": "Contains - Nuts",
         "Ratings": 4.2,
+        "Price": 370,
         "type": "Vegetarian",
         "size": [
             {
                 "name": "Tall",
                 "inStock": true,
-                "Price": 370,
                 "serving_size": "354ml",
                 "nutritional_value": "191Kcal"
             },
             {
                 "name": "Grande",
                 "inStock": true,
-                "Price": 399,
+                "Additional_Price":29,
                 "serving_size": "473ml",
                 "nutritional_value": "271Kcal"
             },
             {
                 "name": "Venti",
                 "inStock": true,
-                "Price": 445,
+                "Additional_Price":75,
                 "serving_size": "591ml",
                 "nutritional_value": "346Kcal"
             }
@@ -756,33 +756,33 @@
         "category_id": 2,
         "allergen": "Contains - Caffeine",
         "Ratings": 4.2,
+        "Price": 370,
         "type": "Vegetarian",
         "size":[
             {
                 "name": "Short",
                 "inStock": true,
-                "Price": 370,
                 "serving_size": "237ml",
                 "nutritional_value": "0Kcal"
             },
             {
                 "name": "Tall",
                 "inStock": true,
-                "Price": 390,
+                "Additional_Price": 20,
                 "serving_size": "354ml",
                 "nutritional_value": "0Kcal"
             },
             {
                 "name": "grande",
                 "inStock": true,
-                "Price": 400,
+                "Additional_Price": 30,
                 "serving_size": "473ml",
                 "nutritional_value": "0Kcal"
             },
             {
                 "name": "Venti",
                 "inStock": true,
-                "Price": 450,
+                "Additional_Price": 80,
                 "serving_size": "591ml",
                 "nutritional_value": "0Kcal"
             }
@@ -810,33 +810,33 @@
         "category_id": 2,
         "allergen": "Contains - Caffeine",
         "Ratings": 4.0,
+        "Price": 370,
         "type": "Vegetarian",
         "size":[
             {
                 "name": "Short",
                 "inStock": true,
-                "Price": 370,
                 "serving_size": "237ml",
                 "nutritional_value": "0Kcal"
             },
             {
                 "name": "Tall",
                 "inStock": true,
-                "Price": 390,
+                "Additional_Price": 20,
                 "serving_size": "354ml",
                 "nutritional_value": "0Kcal"
             },
             {
                 "name": "grande",
                 "inStock": true,
-                "Price": 400,
+                "Additional_Price": 30,
                 "serving_size": "473ml",
                 "nutritional_value": "0Kcal"
             },
             {
                 "name": "Venti",
                 "inStock": true,
-                "Price": 450,
+                "Additional_Price": 80,
                 "serving_size": "591ml",
                 "nutritional_value": "0Kcal"
             }
@@ -849,6 +849,7 @@
         "image_url": "https://i.ibb.co/zhnTXG0/vanilla-cream-frap-1-tcm87-29602-w1024-n.jpg",
         "description": "This rich and creamy blend of vanilla, milk and ice topped with whipped cream takes vanilla flavor to another level. ",
         "category_id": 3,
+        "Price": 295,
         "allergen": " Contains-Milk",
         "Ratings": 4.0,
         "type": "Vegetarian",
@@ -856,21 +857,20 @@
             {
                 "name": "Tall",
                 "inStock": true,
-                "Price": 295,
                 "serving_size": "354ml",
                 "nutritional_value": "345.1Kcal"
             },
             {
                 "name": "Grande",
                 "inStock": true,
-                "Price": 330,
+                "Additional_Price":35,
                 "serving_size": "473ml",
                 "nutritional_value": "474.75Kcal"
             },
             {
                 "name": "Venti",
                 "inStock": true,
-                "Price": 360,
+                "Additional_Price":65,
                 "serving_size": "591ml",
                 "nutritional_value": "591.72Kcal"
             }
@@ -984,26 +984,26 @@
         "category_id": 3,
         "allergen": " Contains-Milk",
         "Ratings": 4.0,
+        "Price": 299,
         "type": "Vegetarian",
         "size":[
             {
                 "name": "Tall",
                 "inStock": true,
-                "Price": 299,
                 "serving_size": "354ml",
                 "nutritional_value": "364.5Kcal"
             },
             {
                 "name": "Grande",
                 "inStock": true,
-                "Price": 340,
+                "Additional_Price":35,
                 "serving_size": "473ml",
                 "nutritional_value": "485.42Kcal"
             },
             {
                 "name": "Venti",
                 "inStock": true,
-                "Price": 370,
+                "Additional_Price":65,
                 "serving_size": "591ml",
                 "nutritional_value": "601.65Kcal"
             }
@@ -1131,6 +1131,7 @@
         "image_url": "https://i.ibb.co/Twv8sFf/java-chip-frap-1-tcm87-30363-w1024-n.jpg",
         "description": "Rich mocha-flavored sauce meets up with chocolaty chips, milk and ice. Top it off with sweetened whipped cream and mocha drizzle for a real party in your mouth. ",
         "category_id": 3,
+        "Price": 330,
         "allergen": " Contains-Milk,Wheat,Soy",
         "Ratings": 4.5,
         "type": "Vegetarian",
@@ -1138,21 +1139,20 @@
             {
                 "name": "Tall",
                 "inStock": true,
-                "Price": 330,
                 "serving_size": "354ml",
                 "nutritional_value": "414.9Kcal"
             },
             {
                 "name": "Grande",
                 "inStock": true,
-                "Price": 360,
+                "Additional_Price":30,
                 "serving_size": "473ml",
                 "nutritional_value": "580.35Kcal"
             },
             {
                 "name": "Venti",
                 "inStock": true,
-                "Price": 395,
+                "Additional_Price":65,
                 "serving_size": "591ml",
                 "nutritional_value": "729.42Kcal"
             }
@@ -1265,26 +1265,26 @@
         "category_id": 3,
         "allergen": " Contains-Milk",
         "Ratings": 4.0,
+        "Price": 320,
         "type": "Vegetarian",
         "size":[
             {
                 "name": "Tall",
                 "inStock": true,
-                "Price": 320,
                 "serving_size": "354ml",
                 "nutritional_value": "341.7Kcal"
             },
             {
                 "name": "Grande",
                 "inStock": true,
-                "Price": 345,
+                "Additional_Price":25,
                 "serving_size": "473ml",
                 "nutritional_value": "470.31Kcal"
             },
             {
                 "name": "Venti",
                 "inStock": true,
-                "Price": 375,
+                "Additional_Price":55,
                 "serving_size": "591ml",
                 "nutritional_value": "585.82Kcal"
             }
@@ -1422,26 +1422,26 @@
         "category_id": 3,
         "allergen": " Contains-Milk",
         "Ratings": 4.5,
+        "Price": 295,
         "type": "Vegetarian",
         "size":[
             {
                 "name": "Tall",
                 "inStock": true,
-                "Price": 295,
                 "serving_size": "354ml",
                 "nutritional_value": "530.2Kcal"
             },
             {
                 "name": "Grande",
                 "inStock": true,
-                "Price": 330,
+                "Additional_Price":25,
                 "serving_size": "473ml",
                 "nutritional_value": "752.87Kcal"
             },
             {
                 "name": "Venti",
                 "inStock": true,
-                "Price": 360,
+                "Additional_Price":55,
                 "serving_size": "591ml",
                 "nutritional_value": "962.58Kcal"
             }
@@ -1558,26 +1558,26 @@
         "category_id": 3,
         "allergen": " Contains-Milk,Tea",
         "Ratings": 4.5,
+        "Price": 295,
         "type": "Vegetarian",
         "size":[
             {
                 "name": "Tall",
                 "inStock": true,
-                "Price": 295,
                 "serving_size": "354ml",
                 "nutritional_value": "530.2Kcal"
             },
             {
                 "name": "Grande",
                 "inStock": true,
-                "Price": 330,
+                "Additional_Price":35,
                 "serving_size": "473ml",
                 "nutritional_value": "752.87Kcal"
             },
             {
                 "name": "Venti",
                 "inStock": true,
-                "Price": 360,
+                "Additional_Price":55,
                 "serving_size": "591ml",
                 "nutritional_value": "962.58Kcal"
             }
@@ -1693,27 +1693,27 @@
         "description": "We blend sweetened premium matcha?reen?ea, milk and ice and top it with sweetened whipped cream to give you a delicious boost of energy.",
         "category_id": 3,
         "allergen": " Contains-Milk",
+        "Price": 335,
         "Ratings": 3.0,
         "type": "Vegetarian",
         "size":[
             {
                 "name": "Tall",
                 "inStock": true,
-                "Price": 335,
                 "serving_size": "354ml",
                 "nutritional_value": "412.4Kcal"
             },
             {
                 "name": "Grande",
                 "inStock": true,
-                "Price": 360,
+                "Additional_Price":25,
                 "serving_size": "473ml",
                 "nutritional_value": "575.94Kcal"
             },
             {
                 "name": "Venti",
                 "inStock": true,
-                "Price": 395,
+                "Additional_Price":55,
                 "serving_size": "591ml",
                 "nutritional_value": "726.64Kcal"
             }
@@ -1787,6 +1787,7 @@
         "image_url": "https://i.ibb.co/WGrVWJw/white-cho-cream-frap-1-tcm87-29603-w1024-n.jpg",
         "description": "We combine our Rich in flavour, full-bodied espresso with bittersweet mocha sauce and steamed milk. The classic coffee drink to satisfy your sweet tooth.",
         "category_id": 3,
+        "Price": 270,
         "allergen": "Contains-Milk",
         "Ratings": 4.0,
         "type": "Vegetarian",
@@ -1794,28 +1795,27 @@
             {
                 "name": "Short Hot",
                 "inStock": true,
-                "Price": 270,
                 "serving_size": "354ml",
                 "nutritional_value": "232Kcal"
             },
             {
                 "name": "Tall Hot",
                 "inStock": true,
-                "Price": 305,
+                "Additional_Price":35,
                 "serving_size": "354ml",
                 "nutritional_value": "335.7Kcal"
             },
             {
                 "name": "Grande Hot",
                 "inStock": true,
-                "Price": 335,
+                "Additional_Price":65,
                 "serving_size": "473ml",
                 "nutritional_value": "391.1Kcal"
             },
             {
                 "name": "Venti Hot",
                 "inStock": true,
-                "Price": 360,
+                "Additional_Price":90,
                 "serving_size": "591ml",
                 "nutritional_value": "472.7Kcal"
             }
@@ -1937,35 +1937,29 @@
         "image_url": "https://i.ibb.co/WGrVWJw/white-cho-cream-frap-1-tcm87-29603-w1024-n.jpg",
         "description": "We combine our Rich in flavour, full-bodied espresso with bittersweet mocha sauce and steamed milk. The classic coffee drink to satisfy your sweet tooth.",
         "category_id": 3,
+        "Price": 280,
         "allergen": "Contains-Milk",
         "Ratings": 4.0,
         "type": "Vegetarian",
         "size":[
+          
             {
-                "name": "Short Hot",
+                "name": "Tall",
                 "inStock": true,
-                "Price": 270,
-                "serving_size": "354ml",
-                "nutritional_value": "232Kcal"
-            },
-            {
-                "name": "Tall Hot",
-                "inStock": true,
-                "Price": 305,
                 "serving_size": "354ml",
                 "nutritional_value": "335.7Kcal"
             },
             {
-                "name": "Grande Hot",
+                "name": "Grande",
                 "inStock": true,
-                "Price": 335,
+                "Additional_Price":40,
                 "serving_size": "473ml",
                 "nutritional_value": "391.1Kcal"
             },
             {
-                "name": "Venti Hot",
+                "name": "Venti",
                 "inStock": true,
-                "Price": 360,
+                "Additional_Price":65,
                 "serving_size": "591ml",
                 "nutritional_value": "472.7Kcal"
             }
@@ -2089,26 +2083,26 @@
         "category_id": 4,
         "allergen": "Contains-Milk",
         "Ratings": 4.1,
+        "Price": 345,
         "type": "Vegetarian",
         "size":[
             {
                 "name": "Tall",
                 "inStock": true,
-                "Price": 345,
                 "serving_size": "354ml",
                 "nutritional_value": "193.6Kcal"
             },
             {
                 "name": "Grande",
                 "inStock": true,
-                "Price": 375,
+                "Additional_Price":30,
                 "serving_size": "473ml",
                 "nutritional_value": "288.85Kcal"
             },
             {
                 "name": "Venti",
                 "inStock": true,
-                "Price": 415,
+                "Additional_Price":70,
                 "serving_size": "591ml",
                 "nutritional_value": "371.65Kcal"
             }
@@ -2223,26 +2217,26 @@
         "category_id": 4,
         "allergen": "Contains-Milk",
         "Ratings": 4.1,
+        "Price": 280,
         "type": "Vegetarian",
         "size":[
             {
                 "name": "Tall",
-                "inStock": true,
-                "Price": 280,
+                "inStock": true,               
                 "serving_size": "354ml",
                 "nutritional_value": "193.6Kcal"
             },
             {
                 "name": "Grande",
                 "inStock": true,
-                "Price": 320,
+                "Additional_Price":40,
                 "serving_size": "473ml",
                 "nutritional_value": "288.85Kcal"
             },
             {
                 "name": "Venti",
                 "inStock": true,
-                "Price": 345,
+                "Additional_Price":65,
                 "serving_size": "591ml",
                 "nutritional_value": "371.65Kcal"
             }
@@ -2360,28 +2354,28 @@
         "image_url": "https://i.ibb.co/jz8r4Df/Vanilla-Sweet-Cream-Cold-Brew-tcm87-30008-w1024-n.png",
         "description": "Cold brew with Vanilla Sweet Cream is made with starbucks cold brew over ice and topped with a house made vanilla sweet cream, which floats on top of the beverage before slowly cascading down.",
         "category_id": 4,
+        "Price": 280,
         "allergen": "Contains-Milk",
         "Ratings": 4.1,
         "type": "Vegetarian",
         "size":[
             {
                 "name": "Tall",
-                "inStock": true,
-                "Price": 280,
+                "inStock": true,               
                 "serving_size": "354ml",
                 "nutritional_value": "193.6Kcal"
             },
             {
                 "name": "Grande",
                 "inStock": true,
-                "Price": 320,
+                "Additional_Price":30,
                 "serving_size": "473ml",
                 "nutritional_value": "288.85Kcal"
             },
             {
                 "name": "Venti",
                 "inStock": true,
-                "Price": 345,
+                "Additional_Price":65,
                 "serving_size": "591ml",
                 "nutritional_value": "371.65Kcal"
             }
@@ -2488,27 +2482,27 @@
         "description": "Our blend of ice tea is slightly sweetened and hand shaken with ice for a refreshingly vibrant flavour.",
         "category_id": 5,
         "allergen": "",
+        "Price": 330,
         "Ratings": 4.1,
         "type": "Vegetarian",
         "size":[
             {
                 "name": "Tall Iced",
-                "inStock": true,
-                "Price": 330,
+                "inStock": true,             
                 "serving_size": "354ml",
                 "nutritional_value": "193.6Kcal"
             },
             {
                 "name": "Grande Iced",
                 "inStock": true,
-                "Price": 355,
+                "Additional_Price":30,
                 "serving_size": "473ml",
                 "nutritional_value": "288.85Kcal"
             },
             {
                 "name": "Venti Iced",
                 "inStock": true,
-                "Price": 390,
+                "Additional_Price":65,
                 "serving_size": "591ml",
                 "nutritional_value": "371.65Kcal"
             }
@@ -2530,27 +2524,27 @@
         "description": "Our blend of lemongrass  is slightly sweetened and hand shaken with ice for a refreshingly vibrant flavour.",
         "category_id": 5,
         "allergen": "",
+        "Price": 330,
         "Ratings": 4.1,
         "type": "Vegetarian",
         "size":[
             {
                 "name": "Tall Iced",
                 "inStock": true,
-                "Price": 330,
                 "serving_size": "354ml",
                 "nutritional_value": "193.6Kcal"
             },
             {
                 "name": "Grande Iced",
                 "inStock": true,
-                "Price": 355,
+                "Additional_Price":65,
                 "serving_size": "473ml",
                 "nutritional_value": "288.85Kcal"
             },
             {
                 "name": "Venti Iced",
                 "inStock": true,
-                "Price": 390,
+                "Additional_Price":90,
                 "serving_size": "591ml",
                 "nutritional_value": "371.65Kcal"
             }
@@ -2571,6 +2565,7 @@
         "image_url": "https://i.ibb.co/jTZtrpG/iced-hibiscus-pass-2-tcm87-29612-w1024-n.jpg",
         "description": "Our blend of hibiscus, lemongrass and apple is slightly sweetened and hand shaken with ice for a refreshingly vibrant flavour.",
         "category_id": 5,
+        "Price": 330,
         "allergen": "",
         "Ratings": 4.1,
         "type": "Vegetarian",
@@ -2578,21 +2573,20 @@
             {
                 "name": "Tall Iced",
                 "inStock": true,
-                "Price": 330,
                 "serving_size": "354ml",
                 "nutritional_value": "193.6Kcal"
             },
             {
                 "name": "Grande Iced",
                 "inStock": true,
-                "Price": 355,
+                "Additional_Price":30,
                 "serving_size": "473ml",
                 "nutritional_value": "288.85Kcal"
             },
             {
                 "name": "Venti Iced",
                 "inStock": true,
-                "Price": 390,
+                "Additional_Price":60,
                 "serving_size": "591ml",
                 "nutritional_value": "371.65Kcal"
             }
@@ -2616,32 +2610,32 @@
         "Ratings": 3.8,
         "allergen": "Contains - Milk",
         "type": "Vegetarian",
+        "Price": 240,
         "size": [
             {
                 "name": "Short",
                 "inStock": true,
-                "Price": 240,
                 "serving_size": "237ml",
                 "nutritional_value": "104Kcal"
             },
             {
                 "name": "Tall",
                 "inStock": true,
-                "Price": 265,
+                "Additional_Price": 25,
                 "serving_size": "354ml",
                 "nutritional_value": "173Kcal"
             },
             {
                 "name": "Grande",
                 "inStock": true,
-                "Price": 295,
+                "Additional_Price": 55,
                 "serving_size": "473ml",
                 "nutritional_value": "220Kcal"
             },
             {
                 "name": "Venti",
                 "inStock": true,
-                "Price": 325,
+                "Additional_Price": 85,
                 "serving_size": "591ml",
                 "nutritional_value": "298Kcal"
             }
@@ -2766,32 +2760,32 @@
         "Ratings": 4,
         "allergen": "Contains - Milk",
         "type": "Vegetarian",
+        "Price": 285,
         "size": [
             {
                 "name": "Short",
                 "inStock": true,
-                "Price": 285,
                 "serving_size": "237ml",
                 "nutritional_value": "125Kcal"
             },
             {
                 "name": "Tall",
                 "inStock": true,
-                "Price": 310,
+                "Additional_Price": 25,
                 "serving_size": "354ml",
                 "nutritional_value": "194Kcal"
             },
             {
                 "name": "Grande",
                 "inStock": true,
-                "Price": 340,
+                "Additional_Price": 55,
                 "serving_size": "473ml",
                 "nutritional_value": "241Kcal"
             },
             {
                 "name": "Venti",
                 "inStock": true,
-                "Price": 370,
+                "Additional_Price": 85,
                 "serving_size": "591ml",
                 "nutritional_value": "310Kcal"
             }
@@ -2916,32 +2910,32 @@
         "Ratings": 4,
         "allergen": "Contains - Milk",
         "type": "Vegetarian",
+        "Price": 285,
         "size": [
             {
                 "name": "Short",
                 "inStock": true,
-                "Price": 285,
                 "serving_size": "237ml",
                 "nutritional_value": "130Kcal"
             },
             {
                 "name": "Tall",
                 "inStock": true,
-                "Price": 310,
+                "Additional_Price": 25,
                 "serving_size": "354ml",
                 "nutritional_value": "199Kcal"
             },
             {
                 "name": "Grande",
                 "inStock": true,
-                "Price": 340,
+                "Additional_Price": 55,
                 "serving_size": "473ml",
                 "nutritional_value": "246Kcal"
             },
             {
                 "name": "Venti",
                 "inStock": true,
-                "Price": 370,
+                "Additional_Price": 85,
                 "serving_size": "591ml",
                 "nutritional_value": "315Kcal"
             }
@@ -3066,32 +3060,32 @@
         "Ratings": 3,
         "allergen": "Contains - Milk",
         "type": "Vegetarian",
+        "Price": 280,
         "size": [
             {
                 "name": "Short",
                 "inStock": true,
-                "Price": 280,
                 "serving_size": "237ml",
                 "nutritional_value": "130Kcal"
             },
             {
                 "name": "Tall",
                 "inStock": true,
-                "Price": 305,
+                "Additional_Price": 25,
                 "serving_size": "354ml",
                 "nutritional_value": "199Kcal"
             },
             {
                 "name": "Grande",
                 "inStock": true,
-                "Price": 335,
+                "Additional_Price": 55,
                 "serving_size": "473ml",
                 "nutritional_value": "245Kcal"
             },
             {
                 "name": "Venti",
                 "inStock": true,
-                "Price": 360,
+                "Additional_Price": 75,
                 "serving_size": "591ml",
                 "nutritional_value": "315Kcal"
             }
@@ -3211,25 +3205,25 @@
         "Ratings": 4.5,
         "allergen": "Contains - Milk",
         "type": "Vegetarian",
+        "Price": 265,
         "size": [
             {
                 "name": "Tall",
                 "inStock": true,
-                "Price": 265,
                 "serving_size": "354ml",
                 "nutritional_value": "104Kcal"
             },
             {
                 "name": "Grande",
                 "inStock": true,
-                "Price": 295,
+                "Additional_Price": 30,
                 "serving_size": "473ml",
                 "nutritional_value": "173Kcal"
             },
             {
                 "name": "Venti",
                 "inStock": true,
-                "Price": 325,
+                "Additional_Price": 60,
                 "serving_size": "591ml",
                 "nutritional_value": "220Kcal"
             }
@@ -3354,32 +3348,32 @@
         "Ratings": 4.5,
         "allergen": "Contains - Milk",
         "type": "Vegetarian",
+        "Price": 270,
         "size": [
             {
                 "name": "Short",
                 "inStock": true,
-                "Price": 270,
                 "serving_size": "237ml",
                 "nutritional_value": "232Kcal"
             },
             {
                 "name": "Tall",
                 "inStock": true,
-                "Price": 305,
+                "Additional_Price": 55,
                 "serving_size": "354ml",
                 "nutritional_value": "336Kcal"
             },
             {
                 "name": "Grande",
                 "inStock": true,
-                "Price": 335,
+                "Additional_Price": 65,
                 "serving_size": "473ml",
                 "nutritional_value": "391Kcal"
             },
             {
                 "name": "Venti",
                 "inStock": true,
-                "Price": 360,
+                "Additional_Price": 90,
                 "serving_size": "591ml",
                 "nutritional_value": "472Kcal"
             }
@@ -3509,32 +3503,32 @@
         "Ratings": 4.5,
         "allergen": "Contains - Milk",
         "type": "Vegetarian",
+        "Price": 295,
         "size": [
             {
                 "name": "Short",
                 "inStock": true,
-                "Price": 295,
                 "serving_size": "237ml",
                 "nutritional_value": "162Kcal"
             },
             {
                 "name": "Tall",
                 "inStock": true,
-                "Price": 325,
+                "Additional_Price": 30,
                 "serving_size": "354ml",
                 "nutritional_value": "255Kcal"
             },
             {
                 "name": "Grande",
                 "inStock": true,
-                "Price": 350,
+                "Additional_Price": 55,
                 "serving_size": "473ml",
                 "nutritional_value": "333Kcal"
             },
             {
                 "name": "Venti",
                 "inStock": true,
-                "Price": 375,
+                "Additional_Price": 80,
                 "serving_size": "591ml",
                 "nutritional_value": "426Kcal"
             }
@@ -3659,32 +3653,32 @@
         "Ratings": 3.8,
         "allergen": "Contains - Milk",
         "type": "Vegetarian",
+        "Price": 270,
         "size": [
             {
                 "name": "Short",
                 "inStock": true,
-                "Price": 270,
                 "serving_size": "237ml",
                 "nutritional_value": "252Kcal"
             },
             {
                 "name": "Tall",
                 "inStock": true,
-                "Price": 305,
+                "Additional_Price": 35,
                 "serving_size": "354ml",
                 "nutritional_value": "395Kcal"
             },
             {
                 "name": "Grande",
                 "inStock": true,
-                "Price": 340,
+                "Additional_Price": 70,
                 "serving_size": "473ml",
                 "nutritional_value": "451Kcal"
             },
             {
                 "name": "Venti",
                 "inStock": true,
-                "Price": 365,
+                "Additional_Price": 95,
                 "serving_size": "591ml",
                 "nutritional_value": "564Kcal"
             }
@@ -3804,32 +3798,32 @@
         "Ratings": 3.5,
         "allergen": "None",
         "type": "Vegetarian",
+        "Price": 215,
         "size": [
             {
                 "name": "Short",
                 "inStock": true,
-                "Price": 215,
                 "serving_size": "237ml",
                 "nutritional_value": "0Kcal"
             },
             {
                 "name": "Tall",
                 "inStock": true,
-                "Price": 245,
+                "Additional_Price": 30,
                 "serving_size": "354ml",
                 "nutritional_value": "0Kcal"
             },
             {
                 "name": "Grande",
                 "inStock": true,
-                "Price": 270,
+                "Additional_Price": 55,
                 "serving_size": "473ml",
                 "nutritional_value": "0Kcal"
             },
             {
                 "name": "Venti",
                 "inStock": true,
-                "Price": 300,
+                "Additional_Price": 85,
                 "serving_size": "591ml",
                 "nutritional_value": "0Kcal"
             }
@@ -3888,32 +3882,32 @@
         "Ratings": 3.6,
         "allergen": "Contains - Milk",
         "type": "Vegetarian",
+        "Price": 295,
         "size": [
             {
                 "name": "Short",
                 "inStock": true,
-                "Price": 295,
                 "serving_size": "237ml",
                 "nutritional_value": "104Kcal"
             },
             {
                 "name": "Tall",
                 "inStock": true,
-                "Price": 330,
+                "Additional_Price": 35,
                 "serving_size": "354ml",
                 "nutritional_value": "173Kcal"
             },
             {
                 "name": "Grande",
                 "inStock": true,
-                "Price": 365,
+                "Additional_Price": 70,
                 "serving_size": "473ml",
                 "nutritional_value": "220Kcal"
             },
             {
                 "name": "Venti",
                 "inStock": true,
-                "Price": 390,
+                "Additional_Price": 95,
                 "serving_size": "591ml",
                 "nutritional_value": "289Kcal"
             }
@@ -4038,32 +4032,32 @@
         "Ratings": 4,
         "allergen": "Contains-Milk",
         "type": "Vegetarian",
+        "Price": 235,
         "size": [
             {
                 "name": "Short",
                 "inStock": true,
-                "Price": 235,
                 "serving_size": "237ml",
                 "nutritional_value": "103Kcal"
             },
             {
                 "name": "Tall",
                 "inStock": true,
-                "Price": 260,
+                "Additional_Price": 25,
                 "serving_size": "354ml",
                 "nutritional_value": "122Kcal"
             },
             {
                 "name": "Grande",
                 "inStock": true,
-                "Price": 290,
+                "Additional_Price": 55,
                 "serving_size": "473ml",
                 "nutritional_value": "158Kcal"
             },
             {
                 "name": "Venti",
                 "inStock": true,
-                "Price": 315,
+                "Additional_Price": 80,
                 "serving_size": "591ml",
                 "nutritional_value": "176Kcal"
             }
@@ -4117,32 +4111,32 @@
         "Ratings": 4,
         "allergen": "Contains-Milk",
         "type": "Vegetarian",
+        "Price": 270,
         "size": [
             {
                 "name": "Short",
                 "inStock": true,
-                "Price": 270,
                 "serving_size": "237ml",
                 "nutritional_value": "232Kcal"
             },
             {
                 "name": "Tall",
                 "inStock": true,
-                "Price": 305,
+                "Additional_Price": 35,
                 "serving_size": "354ml",
                 "nutritional_value": "291Kcal"
             },
             {
                 "name": "Grande",
                 "inStock": true,
-                "Price": 340,
+                "Additional_Price": 70,
                 "serving_size": "473ml",
                 "nutritional_value": "364Kcal"
             },
             {
                 "name": "Venti",
                 "inStock": true,
-                "Price": 365,
+                "Additional_Price": 95,
                 "serving_size": "591ml",
                 "nutritional_value": "420Kcal"
             }
@@ -4267,32 +4261,32 @@
         "Ratings": 3.6,
         "allergen": "Contains-Milk",
         "type": "Vegetarian",
+        "Price": 270,
         "size": [
             {
                 "name": "Short",
                 "inStock": true,
-                "Price": 270,
                 "serving_size": "237ml",
                 "nutritional_value": "252Kcal"
             },
             {
                 "name": "Tall",
                 "inStock": true,
-                "Price": 305,
+                "Additional_Price": 35,
                 "serving_size": "354ml",
                 "nutritional_value": "339Kcal"
             },
             {
                 "name": "Grande",
                 "inStock": true,
-                "Price": 340,
+                "Additional_Price": 70,
                 "serving_size": "473ml",
                 "nutritional_value": "427Kcal"
             },
             {
                 "name": "Venti",
                 "inStock": true,
-                "Price": 365,
+                "Additional_Price": 95,
                 "serving_size": "591ml",
                 "nutritional_value": "499Kcal"
             }
@@ -4417,25 +4411,25 @@
         "Ratings": 3.8,
         "allergen": "Contains-Milk",
         "type": "Vegetarian",
+        "Price": 215,
         "size": [
             {
                 "name": "Tall",
                 "inStock": true,
-                "Price": 215,
                 "serving_size": "354ml",
                 "nutritional_value": "339Kcal"
             },
             {
                 "name": "Grande",
                 "inStock": true,
-                "Price": 270,
+                "Additional_Price": 55,
                 "serving_size": "473ml",
                 "nutritional_value": "427Kcal"
             },
             {
                 "name": "Venti",
                 "inStock": true,
-                "Price": 300,
+                "Additional_Price": 30,
                 "serving_size": "591ml",
                 "nutritional_value": "499Kcal"
             }
@@ -4494,32 +4488,32 @@
         "Ratings": 3.5,
         "allergen": "Contains-Milk",
         "type": "Vegetarian",
+        "Price": 295,
         "size": [
             {
                 "name": "Short",
                 "inStock": true,
-                "Price": 295,
                 "serving_size": "237ml",
                 "nutritional_value": "163Kcal"
             },
             {
                 "name": "Tall",
                 "inStock": true,
-                "Price": 320,
+                "Additional_Price": 25,
                 "serving_size": "354ml",
                 "nutritional_value": "210Kcal"
             },
             {
                 "name": "Grande",
                 "inStock": true,
-                "Price": 355,
+                "Additional_Price": 60,
                 "serving_size": "473ml",
                 "nutritional_value": "287Kcal"
             },
             {
                 "name": "Venti",
                 "inStock": true,
-                "Price": 380,
+                "Additional_Price": 85,
                 "serving_size": "591ml",
                 "nutritional_value": "325Kcal"
             }
@@ -4649,25 +4643,25 @@
         "Ratings": 3.9,
         "allergen": "Contains - Milk",
         "type": "Vegetarian",
+        "Price": 299,
         "size": [
             {
                 "name": "Tall",
                 "inStock": true,
-                "Price": 299,
                 "serving_size": "354ml",
                 "nutritional_value": "342Kcal"
             },
             {
                 "name": "Grande",
                 "inStock": true,
-                "Price": 340,
+                "Additional_Price": 41,
                 "serving_size": "473ml",
                 "nutritional_value": "470Kcal"
             },
             {
                 "name": "Venti",
                 "inStock": true,
-                "Price": 370,
+                "Additional_Price": 71,
                 "serving_size": "591ml",
                 "nutritional_value": "585Kcal"
             }
@@ -4797,25 +4791,25 @@
         "Ratings": 4.5,
         "allergen": "Contains - Milk, Wheat, Soy",
         "type": "Vegetarian",
+        "Price": 295,
         "size": [
             {
                 "name": "Tall",
                 "inStock": true,
-                "Price": 295,
                 "serving_size": "354ml",
                 "nutritional_value": "392Kcal"
             },
             {
                 "name": "Grande",
                 "inStock": true,
-                "Price": 330,
+                "Additional_Price": 35,
                 "serving_size": "473ml",
                 "nutritional_value": "536Kcal"
             },
             {
                 "name": "Venti",
                 "inStock": true,
-                "Price": 360,
+                "Additional_Price": 65,
                 "serving_size": "591ml",
                 "nutritional_value": "667Kcal"
             }
@@ -4962,25 +4956,25 @@
         "Ratings": 3.8,
         "allergen": "Contains - Milk, Wheat, Soy",
         "type": "Vegetarian",
+        "Price": 345,
         "size": [
             {
                 "name": "Tall",
                 "inStock": true,
-                "Price": 345,
                 "serving_size": "354ml",
                 "nutritional_value": "398Kcal"
             },
             {
                 "name": "Grande",
                 "inStock": true,
-                "Price": 370,
+                "Additional_Price": 25,
                 "serving_size": "473ml",
                 "nutritional_value": "574Kcal"
             },
             {
                 "name": "Venti",
                 "inStock": true,
-                "Price": 410,
+                "Additional_Price": 65,
                 "serving_size": "591ml",
                 "nutritional_value": "714Kcal"
             }
@@ -5110,25 +5104,25 @@
         "Ratings": 4.0,
         "allergen": "Contains - Milk",
         "type": "Vegetarian",
+        "Price": 299,
         "size": [
             {
                 "name": "Tall",
                 "inStock": true,
-                "Price": 299,
                 "serving_size": "354ml",
                 "nutritional_value": "365Kcal"
             },
             {
                 "name": "Grande",
                 "inStock": true,
-                "Price": 340,
+                "Additional_Price": 41,
                 "serving_size": "473ml",
                 "nutritional_value": "385Kcal"
             },
             {
                 "name": "Venti",
                 "inStock": true,
-                "Price": 370,
+                "Additional_Price": 71,
                 "serving_size": "591ml",
                 "nutritional_value": "402Kcal"
             }
@@ -5265,25 +5259,25 @@
         "Ratings": 4.0,
         "allergen": "Contains - Milk",
         "type": "Vegetarian",
+        "Price": 265,
         "size": [
             {
                 "name": "Tall",
                 "inStock": true,
-                "Price": 265,
                 "serving_size": "354ml",
                 "nutritional_value": "209Kcal"
             },
             {
                 "name": "Grande",
                 "inStock": true,
-                "Price": 295,
+                "Additional_Price": 30,
                 "serving_size": "473ml",
                 "nutritional_value": "307Kcal"
             },
             {
                 "name": "Venti",
                 "inStock": true,
-                "Price": 335,
+                "Additional_Price": 70,
                 "serving_size": "591ml",
                 "nutritional_value": "392Kcal"
             }
@@ -5420,25 +5414,25 @@
         "Ratings": 3.6,
         "allergen": "Contains - Milk",
         "type": "Vegetarian",
+        "Price": 299,
         "size": [
             {
                 "name": "Tall",
                 "inStock": true,
-                "Price": 299,
                 "serving_size": "354ml",
                 "nutritional_value": "195Kcal"
             },
             {
                 "name": "Grande",
                 "inStock": true,
-                "Price": 340,
+                "Additional_Price": 41,
                 "serving_size": "473ml",
                 "nutritional_value": "293Kcal"
             },
             {
                 "name": "Venti",
                 "inStock": true,
-                "Price": 370,
+                "Additional_Price": 71,
                 "serving_size": "591ml",
                 "nutritional_value": "378Kcal"
             }
@@ -5568,25 +5562,25 @@
         "Ratings": 3.6,
         "allergen": "Contains - Milk",
         "type": "Vegetarian",
+        "Price": 299,
         "size": [
             {
                 "name": "Tall",
                 "inStock": true,
-                "Price": 299,
                 "serving_size": "354ml",
                 "nutritional_value": "371Kcal"
             },
             {
                 "name": "Grande",
                 "inStock": true,
-                "Price": 340,
+                "Additional_Price": 41,
                 "serving_size": "473ml",
                 "nutritional_value": "539Kcal"
             },
             {
                 "name": "Venti",
                 "inStock": true,
-                "Price": 370,
+                "Additional_Price": 71,
                 "serving_size": "591ml",
                 "nutritional_value": "644Kcal"
             }
@@ -5716,25 +5710,25 @@
         "Ratings": 3.9,
         "allergen": "Contains - Milk",
         "type": "Vegetarian",
+        "Price": 299,
         "size": [
             {
                 "name": "Tall",
                 "inStock": true,
-                "Price": 299,
                 "serving_size": "354ml",
                 "nutritional_value": "354Kcal"
             },
             {
                 "name": "Grande",
                 "inStock": true,
-                "Price": 340,
+                "Additional_Price": 41,
                 "serving_size": "473ml",
                 "nutritional_value": "437Kcal"
             },
             {
                 "name": "Venti",
                 "inStock": true,
-                "Price": 370,
+                "Additional_Price": 71,
                 "serving_size": "591ml",
                 "nutritional_value": "501Kcal"
             }
@@ -5864,32 +5858,32 @@
         "Ratings": 4.2,
         "allergen": "Contains - Milk",
         "type": "Vegetarian",
+        "Price": 240,
         "size": [
             {
                 "name": "Short",
                 "inStock": true,
-                "Price": 240,
                 "serving_size": "237ml",
                 "nutritional_value": "284Kcal"
             },
             {
                 "name": "Tall",
                 "inStock": true,
-                "Price": 265,
+                "Additional_Price": 25,
                 "serving_size": "354ml",
                 "nutritional_value": "446Kcal"
             },
             {
                 "name": "Grande",
                 "inStock": true,
-                "Price": 295,
+                "Additional_Price": 55,
                 "serving_size": "473ml",
                 "nutritional_value": "580Kcal"
             },
             {
                 "name": "Venti",
                 "inStock": true,
-                "Price": 330,
+                "Additional_Price": 90,
                 "serving_size": "591ml",
                 "nutritional_value": "735Kcal"
             }
@@ -5970,32 +5964,32 @@
         "Ratings": 3.5,
         "allergen": "None",
         "type": "Vegetarian",
+        "Price": 240,
         "size": [
             {
                 "name": "Short",
                 "inStock": true,
-                "Price": 240,
                 "serving_size": "237ml",
                 "nutritional_value": "0Kcal"
             },
             {
                 "name": "Tall",
                 "inStock": true,
-                "Price": 240,
+                "Additional_Price": 0,
                 "serving_size": "354ml",
                 "nutritional_value": "0Kcal"
             },
             {
                 "name": "Grande",
                 "inStock": true,
-                "Price": 260,
+                "Additional_Price": 20,
                 "serving_size": "473ml",
                 "nutritional_value": "0Kcal"
             },
             {
                 "name": "Venti",
                 "inStock": true,
-                "Price": 260,
+                "Additional_Price": 20,
                 "serving_size": "591ml",
                 "nutritional_value": "0Kcal"
             }
@@ -6037,32 +6031,32 @@
         "Ratings": 3.9,
         "allergen": "Contains-Milk",
         "type": "Vegetarian",
+        "Price": 240,
         "size": [
             {
                 "name": "Short",
                 "inStock": true,
-                "Price": 240,
                 "serving_size": "237ml",
                 "nutritional_value": "107Kcal"
             },
             {
                 "name": "Tall",
                 "inStock": true,
-                "Price": 265,
+                "Additional_Price": 25,
                 "serving_size": "354ml",
                 "nutritional_value": "203Kcal"
             },
             {
                 "name": "Grande",
                 "inStock": true,
-                "Price": 295,
+                "Additional_Price": 55,
                 "serving_size": "473ml",
                 "nutritional_value": "305Kcal"
             },
             {
                 "name": "Venti",
                 "inStock": true,
-                "Price": 330,
+                "Additional_Price": 90,
                 "serving_size": "591ml",
                 "nutritional_value": "385Kcal"
             }
@@ -6104,25 +6098,25 @@
         "Ratings": 4.0,
         "allergen": "Contains-Milk",
         "type": "Vegetarian",
+        "Price": 265,
         "size": [
             {
                 "name": "Tall",
                 "inStock": true,
-                "Price": 265,
                 "serving_size": "354ml",
                 "nutritional_value": "197Kcal"
             },
             {
                 "name": "Grande",
                 "inStock": true,
-                "Price": 295,
+                "Additional_Price": 30,
                 "serving_size": "473ml",
                 "nutritional_value": "267Kcal"
             },
             {
                 "name": "Venti",
                 "inStock": true,
-                "Price": 330,
+                "Additional_Price": 65,
                 "serving_size": "591ml",
                 "nutritional_value": "307Kcal"
             }
@@ -6164,32 +6158,32 @@
         "Ratings": 3.8,
         "allergen": "Contains-Milk",
         "type": "Vegetarian",
+        "Price": 190,
         "size": [
             {
                 "name": "Short",
                 "inStock": true,
-                "Price": 190,
                 "serving_size": "237ml",
                 "nutritional_value": "171Kcal"
             },
             {
                 "name": "Tall",
                 "inStock": true,
-                "Price": 190,
+                "Additional_Price": 0,
                 "serving_size": "354ml",
                 "nutritional_value": "240Kcal"
             },
             {
                 "name": "Grande",
                 "inStock": true,
-                "Price": 210,
+                "Additional_Price": 20,
                 "serving_size": "473ml",
                 "nutritional_value": "321Kcal"
             },
             {
                 "name": "Venti",
                 "inStock": true,
-                "Price": 230,
+                "Additional_Price": 40,
                 "serving_size": "591ml",
                 "nutritional_value": "424Kcal"
             }
@@ -6238,25 +6232,25 @@
         "Ratings": 4.0,
         "allergen": "Contains-Milk",
         "type": "Vegetarian",
+        "Price": 190,
         "size": [
             {
                 "name": "Tall",
                 "inStock": true,
-                "Price": 190,
                 "serving_size": "354ml",
                 "nutritional_value": "170Kcal"
             },
             {
                 "name": "Grande",
                 "inStock": true,
-                "Price": 210,
+                "Additional_Price": 20,
                 "serving_size": "473ml",
                 "nutritional_value": "290Kcal"
             },
             {
                 "name": "Venti",
                 "inStock": true,
-                "Price": 230,
+                "Additional_Price": 40,
                 "serving_size": "591ml",
                 "nutritional_value": "362Kcal"
             }
