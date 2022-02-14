@@ -149,8 +149,16 @@ app.get("/cards/:id",(req,res)=>{
         res.send(result);    
     })
 })
-// Placing Order For gift Cards
-// ADD Route for placing order For Gift Cards
+// Gift card based on user's selection
+app.post('/giftcard',(req,res)=>{
+    console.log(req.body);
+    db.collection('gift').find({_id:{$in:req.body}}).toArray((err,result)=>{
+        if(err) throw err;
+        res.send(result);
+    })
+})
+
+//  placing order For Gift Cards
 app.post(`/placegiftOrder`,(req,res)=>{
     
  
@@ -200,6 +208,14 @@ app.post(`/placeOrder`,(req,res)=>{
     db.collection('ordersmenu').insertOne(req.body,'UTF-8',(err,result)=>{
         if(err) throw err;
         res.send("Order Added");
+    })
+})
+// Menu item based on user's selection
+app.post('/menuItem',(req,res)=>{
+    console.log(req.body);
+    db.collection('Menu').find({_id:{$in:req.body}}).toArray((err,result)=>{
+        if(err) throw err;
+        res.send(result);
     })
 })
 // for delete Order

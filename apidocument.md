@@ -7,93 +7,71 @@ Rewards=> Gift Cards(Api) and Rewards.
 Starbucks Delivers => Menu Api  and geolocation.
                     =>Add to cart.
                     =>Buy now.
+<!-- Start -->
+Main Link: https://brewmusepk.herokuapp.com/
 
->>>Page 1
->>>Find a store
->>>#working
->>>local links
-find a store data = http://localhost:4879/store
-find a store wrt cityid [for using in map]= http://localhost:4879/store?city_id=2
-find a store wrt cityname[for using in search bar]=http://localhost:4879/store?city_name=Delhi
-find a store wrt name[for using in search bar]=http://localhost:4879/store?name=Punjabi Bagh
->>>heroku links
+Page 1: Find a Store
 
+Data to find a store: https://brewmusepk.herokuapp.com/store
 
->>>Page 2 Menu
->>>keynote=the api fetch all data from coffee as well as food.we can take data as per our convenience using jsp by fetch call.
->>>#working
->>>local links
-Menu data of coffee & food wrt to its category e.g featured beverage n all =localhost:4879/item/2
+Data to find a store w.r.t cityId (for using in map): https://brewmusepk.herokuapp.com/store?city_id=2
 
->>>heroku links
+Data to find a store w.r.t cityname (for using in search bar): https://brewmusepk.herokuapp.com/store?city_name=Delhi
 
->>>Coffee finder
->>>working
->>>local links
-http://localhost:4879/ourcoffee/8
-http://localhost:4879/ourcoffee/9
-http://localhost:4879/ourcoffee/10
->>>heroku links
+Data to find a store w.r.t store name (for using in search bar): https://brewmusepk.herokuapp.com/store?name=Punjabi%20Bagh
 
->>>page 5 {Starbucks delivers }
->>>Menu  Data  wrt category
->>> Working
->>>local links
-Menu data of coffee wrt to its category e.g featured beverage n all =http://localhost:4879/Coffee/3
-Menu data of food wrt to its category e.g featured beverage n all =
-offers api
-add store api delivery time cost for two Ratings:
->>>heroku links
+Page 2: Menu (Fetches data for coffee as well as food)
 
->>>Careers
-Page 3: Working local links Jobs w.r.t CityId, Cityname, 
-Keyword = http://localhost:4879/jobs?city_id=2&profile=Barista 
-Jobs w.r.t Cityid = http://localhost:4879/jobs?city_id=2 
-Jobs w.r.t CityName = http://localhost:4879/jobs?city_name=Delhi 
-Jobs w.r.t Keyword/Profile = http://localhost:4879/jobs?profile=Apprentice
+Menu data w.r.t category id: https://brewmusepk.herokuapp.com/item/2
 
->>>careers ends
+Page 3: Careers
 
->>>filters
->>> Working
->>>local links
->>>Type=veg/nonveg
-http://localhost:4879/filter/10?type=Non-Vegetarian
-http://localhost:4879/filter/1?type=Vegetarian
->>>Price like less than 500 and greater than  300
-local link=localhost:4879/filter/1?bprice=300&aprice=500
->>>>Sort of rating from low to high and vice versa
-local link=localhost:4879/filter/1?arate=3&brate=5
-but in descending order local link = localhost:4879/filter/1?arate=3&brate=5.sort=-1 
+Jobs w.r.t CityId and Keyword/Profile: https://brewmusepk.herokuapp.com/jobs?city_id=2&profile=Barista
+Jobs w.r.t Cityname and Keyword: https://brewmusepk.herokuapp.com/jobs?city_name=Pune&profile=Barista
 
-<!-- rewards -->
-gift cards
-#working
-Local link =localhost:4879/cards/2
+Jobs w.r.t CityId: https://brewmusepk.herokuapp.com/jobs?city_id=4
+Jobs w.r.t CityName:https://brewmusepk.herokuapp.com/jobs?city_name=Delhi
+
+Jobs w.r.t Keyword/Profile: https://brewmusepk.herokuapp.com/jobs?profile=Apprentice
+
+Api for name animation (Post Call): https://brewmusepk.herokuapp.com/name
+
+Fetching name for animation: https://brewmusepk.herokuapp.com/fetchName/620a86a761236b3d86c70509
 
 
+Page 4: Coffee finder
 
-<!-- for placing Order For Menu -->
-Local link=http://localhost:4879/placeOrder
-<!-- For Deleting Order for Menu -->
-local link=http://localhost:4879/deleteOrder
-<!-- For Updating Order For Menu -->
-local link=http://localhost:4879/updateOrder/62095d8f759853d128db2c49?status=Success
+Combinations of coffee for coffee finder: https://brewmusepk.herokuapp.com/ourcoffee/8
 
-<!-- for placing gift cards -->
-local link=http://localhost:4879/placegiftOrder
-<!-- for deleting Order -->
-local link="http://localhost:4879//deletegiftOrder"
-<!-- for Updating Order -->
-local link=http://localhost:4879/updategiftOrder/62096056d7e9477ae6100660?status=Success
+Page 5: Starbucks Delivers
 
+Filter
 
-// Api for name animation
-local link=http://localhost:4879/name
+For Type (veg/Non-Veg):https://brewmusepk.herokuapp.com/filter/1?type=Vegetarian 
 
-//for fetching name
-local link=http://localhost:4879/fetchName/620a86a761236b3d86c70509
+For Price: https://brewmusepk.herokuapp.com/filter/1?bprice=200&aprice=350
 
+For Ratings:https://brewmusepk.herokuapp.com/filter/5?arate=4 https://brewmuse.herokuapp.com/filter/3?brate=4
+
+To place order (Post Call): https://brewmusepk.herokuapp.com/placeOrder
+
+Menu item based on user's selection (Post Call): https://brewmusepk.herokuapp.com/menuItem
+
+Update Order (Put Call): https://brewmusepk.herokuapp.com/updateOrder/62095d8f759853d128db2c49?status=Success
+
+Delete Order: https://brewmusepk.herokuapp.com/deleteOrder
+
+Page 6: Rewards
+
+List of gift cards:https://brewmusepk.herokuapp.com/cards/1
+
+Gift card based on user's selection (Post Call): https://brewmusepk.herokuapp.com/giftcard
+
+Placing Order for gift cards (Post Call): https://brewmusepk.herokuapp.com/placegiftOrder
+
+Updating Order for gift cards (Put Call): https://brewmusepk.herokuapp.com/updategiftOrder/62096056d7e9477ae6100660?status=SUCCESS
+
+Delete Orders for gift cards: https://brewmusepk.herokuapp.com/deletegiftOrder
 
 
 
