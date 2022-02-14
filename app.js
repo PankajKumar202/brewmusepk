@@ -1,5 +1,7 @@
 let express=require("express");
 let app=express();
+const bodyParser=require("body-parser");
+const cors=require("cors");
 const mongo=require("mongodb");
 const MongoClient=mongo.MongoClient;
 const mongoUrl="mongodb+srv://PankajKumar:Pankaj123@cluster0.cd60j.mongodb.net/Brewmuse?retryWrites=true&w=majority";
@@ -7,6 +9,9 @@ const dotenv=require("dotenv");
 dotenv.config();
 let port=process.env.PORT || 8600;
 var db;
+app.use(bodyParser.urlencoded({extended:true}));
+app.use(bodyParser.json())
+// app.use((cors))
 // get defualt /route
 app.get('/',(req,res)=>{
     res.send("Welcome to Brewmuse Express");
@@ -124,9 +129,92 @@ app.get("/cards/:id",(req,res)=>{
         res.send(result);    
     })
 })
+// Placing Order For gift Cards
+// ADD Route for placing order For Gift Cards
+app.post(`/placegiftOrder`,(req,res)=>{
+    
+ 
+    db.collection('Orders_gift').insertOne(req.body,(err,result)=>{
+        if(err) throw err;
+        res.send("Order Added");
+    })
+})
+// for delete Order
+app.delete(`/deletegiftOrder`,(req,res)=>{
+    let email=req.query.email;
+    let query={}
+    if(email){
+        query={"email":email}
+    }
+    db.collection('Orders_gift').deleteOne(query,(err,result)=>{
+       if(err) console.log(err)
+       res.send(result)
+    })
+})
+// Update Api
+app.put('/updategiftOrder/:id',(req,res)=>{
+    let oId=mongo.ObjectId(req.params.id)
+    console.log(">>>_id",oId)
+    let status=req.query.status?req.query.status:'Pending'
+    db.collection('Orders_gift').updateOne(
+        {_id:oId},
+        {$set:{
+                "status":status,
+                "bank_name":req.body.bank_name,
+                "bank_status":req.body.bank_status
+            
+        }},(err,result)=>{
+            if(err) throw err
+         
+            res.send(`status updated to ${status}`);
+            
+        }
+    )
+        
+    })
 
-// ADD Route
-
+// ADD Route for placing order For Menu
+app.post(`/placeOrder`,(req,res)=>{
+    // let Oid=mongo.ObjectId(req.params.id);
+ 
+    db.collection('ordersmenu').insertOne(req.body,(err,result)=>{
+        if(err) throw err;
+        res.send("Order Added");
+    })
+})
+// for delete Order
+app.delete(`/deleteOrder`,(req,res)=>{
+    let email=req.query.email;
+    let query={}
+    if(email){
+        query={"email":email}
+    }
+    db.collection('ordersmenu').deleteOne(query,(err,result)=>{
+       if(err) console.log(err)
+       res.send(result)
+    })
+})
+// Update Api
+app.put('/updateOrder/:id',(req,res)=>{
+    let oId=mongo.ObjectId(req.params.id)
+    console.log(">>>_id",oId)
+    let status=req.query.status?req.query.status:'Pending'
+    db.collection('ordersmenu').updateOne(
+        {_id:oId},
+        {$set:{
+                "status":status,
+                "bank_name":req.body.bank_name,
+                "bank_status":req.body.bank_status
+            
+        }},(err,result)=>{
+            if(err) throw err
+         
+            res.send(`status updated to ${status}`);
+            
+        }
+    )
+        
+    })
 MongoClient.connect(mongoUrl,(err,connection)=>{
     if(err) throw err;
     db=connection.db("Brewmuse");
@@ -134,4 +222,6 @@ MongoClient.connect(mongoUrl,(err,connection)=>{
         console.log(`Listening in the port ${port}`);
     })
 })
+
+
 
