@@ -11,7 +11,8 @@ let port=process.env.PORT || 8600;
 var db;
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(bodyParser.json())
-// app.use((cors))
+
+app.use(cors())
 // get defualt /route
 app.get('/',(req,res)=>{
     res.send("Welcome to Brewmuse Express");
@@ -78,10 +79,9 @@ app.get('/filter',(req,res)=>{
     let categoryid=Number(req.query.category_id);
     let item_type=req.query.type;
    let sort={Ratings:1}
-   let bprice=Number(req.query.bprice);  
-    let aprice=Number(req.query.aprice);
+   let brate=Number(req.query.brate);  
     let arate=Number(req.query.arate);
-    let brate=Number(req.query.brate);
+ 
     let query={}
     if(categoryid){
         query={category_id:categoryid}
@@ -89,8 +89,8 @@ app.get('/filter',(req,res)=>{
     if(sort){
         sort={Ratings:req.query.sort}
     }
-    if(bprice&aprice){
-        query={$and:[{Price:{$gt:bprice,$lt:aprice}}]}
+    if(brate&arate){
+        query={$and:[{Price:{$gt:brate,$lt:arate}}]}
     }
     if(arate){
         query={Ratings:{$gte:arate}}
@@ -100,15 +100,73 @@ app.get('/filter',(req,res)=>{
      if(item_type){
         query={type:item_type}
     }
-   
-       
-    
-    db.collection('Menu').find(query).sort(sort).toArray((err,result)=>{
+        db.collection('menu').find(query).sort(sort).toArray((err,result)=>{
         if(err) throw err;
         res.send(result)
     })
-
 })
+// Filter for Coffee and food
+// app.get('/filter',(req,res)=>{
+//     let categoryid=Number(req.query.category_id);
+//     let item_type=req.query.type;
+//     let sort = {Ratings:1}
+  
+//     let arate=Number(req.query.arate);
+//     let brate=Number(req.query.brate);
+//     let query={}
+    
+//     if(brate & arate & categoryid & item_type ){
+//         query={$and:[{Price:{$gt:brate,$lt:arate}}],
+//             category_id:categoryid,
+//             type:item_type,
+//             Ratings:{$gte:arate},
+//             Ratings:{$gte:arate}
+//         }
+//     }
+//     else if(brate && arate && categoryid && item_type){
+//         query={$and:[{Price:{$gt:brate,$lt:arate}}],
+//         category_id:categoryid,
+//         type:item_type}
+//     }
+//     else if(brate && arate && categoryid){
+//         query={$and:[{Price:{$gt:brate,$lt:arate}}]}
+//     }
+//     else if(item_type && categoryid){
+//         query={ 
+//             category_id:categoryid,
+//             type:item_type
+//         }
+//     }
+//     else if(brate && arate){
+//         query={$and:[{Price:{$gt:brate,$lt:arate}}]}
+//     }
+//     else if(arate){
+//         query={Ratings:{$gte:arate}}
+//     }
+//     else if(brate){
+//         query={Ratings:{$lte:brate}}
+//     }
+//     if(item_type){
+//         query={type:item_type}
+//     }
+//     if(categoryid){
+//         query={category_id:categoryid}
+//     }
+//     if(sort){
+//         sort={Ratings:req.query.sort}
+//     }
+       
+    
+//     db.collection('menu').find(query).sort(sort).toArray((err,result)=>{
+//         if(err) throw err;
+//         res.send(result)
+//     })
+
+// })
+   
+       
+    
+
 
 
 // Careers wrt city keyword
