@@ -21,8 +21,9 @@ Data to find a store w.r.t cityname (for using in search bar): https://brewmusep
 Data to find a store w.r.t store name (for using in search bar): https://brewmusepk.herokuapp.com/store?name=Punjabi%20Bagh
 
 Page 2: Menu (Fetches data for coffee as well as food)
-
-Menu data w.r.t category id: https://brewmusepk.herokuapp.com/item/2
+all categories http://localhost:4879/category
+specific category wrt to category id http://localhost:4879/category/1 
+Menu data : https://brewmusepk.herokuapp.com/Menu
 
 Page 3: Careers
 
@@ -47,11 +48,12 @@ Page 5: Starbucks Delivers
 
 Filter
 
-For Type (veg/Non-Veg):https://brewmusepk.herokuapp.com/filter/1?type=Vegetarian 
+For Type (veg/Non-Veg):https://brewmusepk.herokuapp.com/filter?type=Non-Vegetarian 
+for categories:https://brewmusepk.herokuapp.com/filter?category_id=1
 
-For Price: https://brewmusepk.herokuapp.com/filter/1?bprice=200&aprice=350
+For Price: https://brewmusepk.herokuapp.com/filter?bprice=200&aprice=350
 
-For Ratings:https://brewmusepk.herokuapp.com/filter/5?arate=4 https://brewmuse.herokuapp.com/filter/3?brate=4
+For Ratings:https://brewmusepk.herokuapp.com/filter?arate=4 https://brewmuse.herokuapp.com/filter?brate=4
 
 To place order (Post Call): https://brewmusepk.herokuapp.com/placeOrder
 

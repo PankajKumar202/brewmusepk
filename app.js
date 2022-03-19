@@ -65,19 +65,17 @@ app.get('/category',(req,res)=>{
     })
 })
 // coffee and food by Menu
-app.get('/item/:id',(req,res)=>{
-let categoryID=Number(req.params.id);
-console.log(">>>>>categoryID",categoryID);
+app.get('/menu',(req,res)=>{
 
-db.collection('Menu').find({"category_id":categoryID}).toArray((err,result)=>{
+
+db.collection('Menu').find().toArray((err,result)=>{
     if(err) console.log(err)
     res.send(result);
 })
 })
 // filter 
-app.get('/filter/:id',(req,res)=>{
-    let categoryID=Number(req.params.id);
-    console.log(">>>>>categoryID",categoryID);
+app.get('/filter',(req,res)=>{
+    let categoryid=Number(req.query.category_id);
     let item_type=req.query.type;
    let sort={Ratings:1}
    let bprice=Number(req.query.bprice);  
@@ -85,20 +83,24 @@ app.get('/filter/:id',(req,res)=>{
     let arate=Number(req.query.arate);
     let brate=Number(req.query.brate);
     let query={}
+    if(categoryid){
+        query={category_id:categoryid}
+    }
     if(sort){
         sort={Ratings:req.query.sort}
     }
     if(bprice&aprice){
-        query={$and:[{Price:{$gt:bprice,$lt:aprice}}],category_id:categoryID}
+        query={$and:[{Price:{$gt:bprice,$lt:aprice}}]}
     }
     if(arate){
-        query={Ratings:{$gte:arate},category_id:categoryID}
+        query={Ratings:{$gte:arate}}
     }else if(brate){
-        query={Ratings:{$lte:brate},category_id:categoryID}
+        query={Ratings:{$lte:brate}}
     }
      if(item_type){
-        query={type:item_type,category_id:categoryID}
+        query={type:item_type}
     }
+   
        
     
     db.collection('Menu').find(query).sort(sort).toArray((err,result)=>{
