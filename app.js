@@ -47,6 +47,23 @@ app.get('/ourcoffee/:id',(req,res)=>{
         res.send(result);
     })
 })
+//coffee and food categories
+app.get('/category/:id',(req,res)=>{
+    let categoryID=Number(req.params.id);
+    console.log(">>>>categoryid",categoryID)
+    db.collection('category').find({"category_id":categoryID}).toArray((err,result)=>{
+        if(err) console.log(err);
+        res.send(result)
+    })
+})
+app.get('/category',(req,res)=>{
+    // let categoryID=Number(req.params.id);
+    // console.log(">>>>categoryid",categoryID)
+    db.collection('category').find().toArray((err,result)=>{
+        if(err) console.log(err);
+        res.send(result)
+    })
+})
 // coffee and food by Menu
 app.get('/item/:id',(req,res)=>{
 let categoryID=Number(req.params.id);
