@@ -21,9 +21,21 @@ Data to find a store w.r.t cityname (for using in search bar): https://brewmusep
 Data to find a store w.r.t store name (for using in search bar): https://brewmusepk.herokuapp.com/store?name=Punjabi%20Bagh
 
 Page 2: Menu (Fetches data for coffee as well as food)
+<<<<<<< HEAD
 all categories http://localhost:4879/category
 specific category wrt to category id http://localhost:4879/category/1 
 Menu data : https://brewmusepk.herokuapp.com/Menu
+=======
+<<<<<<< HEAD
+all categories http://localhost:4879/category
+specific category wrt to category id http://localhost:4879/category/1 
+Menu data : https://brewmusepk.herokuapp.com/Menu
+=======
+all categories : https://brewmusepk.herokuapp.com/category
+category wrt category id:https://brewmusepk.herokuapp.com/category/2
+Menu data w.r.t category id: https://brewmusepk.herokuapp.com/item/2
+>>>>>>> 4133c5e0bc0f09c7fa909a3b822601b6bb8be152
+>>>>>>> 664c0b40886235376b531256e1350b21105d8a63
 
 Page 3: Careers
 
