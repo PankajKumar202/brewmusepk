@@ -17,6 +17,13 @@ app.use(cors())
 app.get('/',(req,res)=>{
     res.send("Welcome to Brewmuse Express");
 })
+//for home
+app.get('/home',(req,res)=>{
+    db.collection('Home').find().toArray((err,result)=>{
+        if(err) throw err;
+        res.send(result)
+    })
+})
 // find a store 
 app.get('/store',(req,res)=>{
     let city=Number(req.query.city_id);
