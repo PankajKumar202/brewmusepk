@@ -18,8 +18,10 @@ app.get('/',(req,res)=>{
     res.send("Welcome to Brewmuse Express");
 })
 //for home
-app.get('/home',(req,res)=>{
-    db.collection('Home').find().toArray((err,result)=>{
+app.get('/home/:id',(req,res)=>{
+    let oId=mongo.ObjectId(req.params.id)
+    console.log("ObjectID",oId)
+    db.collection('Home').find({"_id":oId}).toArray((err,result)=>{
         if(err) throw err;
         res.send(result)
     })
