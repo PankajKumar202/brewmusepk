@@ -26,6 +26,14 @@ app.get('/home/:id',(req,res)=>{
         res.send(result)
     })
 })
+app.get('/home',(req,res)=>{
+    // let oId=mongo.ObjectId(req.params.id)
+    // console.log("ObjectID",oId)
+    db.collection('Home').find().toArray((err,result)=>{
+        if(err) throw err;
+        res.send(result)
+    })
+})
 // find a store 
 app.get('/store',(req,res)=>{
     let city=Number(req.query.city_id);
