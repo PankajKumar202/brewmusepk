@@ -78,7 +78,7 @@ Delete Order: https://brewmusepk.herokuapp.com/deleteOrder
 Page 6: Rewards
 
 List of gift cards:https://brewmusepk.herokuapp.com/cards/1
-
+List of gift cards category:https://brewmusepk.herokuapp.com/giftCategory/1
 Gift card based on user's selection (Post Call): https://brewmusepk.herokuapp.com/giftcard
 
 Placing Order for gift cards (Post Call): https://brewmusepk.herokuapp.com/placegiftOrder
