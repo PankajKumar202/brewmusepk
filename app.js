@@ -244,6 +244,13 @@ app.get('/fetchName/:id',(req,res)=>{
     })
 })
 // gift cards
+app.get("/giftCategory",(req,res)=>{
+    
+    db.collection("gift_category").find().toArray((err,result)=>{
+        if(err) throw err;
+        res.send(result)
+    })
+})
 app.get("/giftCategory/:id",(req,res)=>{
     let giftCategory=Number(req.params.id);
     console.log(">>>>giftID",giftCategory)
