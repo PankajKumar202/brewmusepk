@@ -56,6 +56,8 @@ app.get('/store',(req,res)=>{
         res.send(result);
     })
 })
+
+
 // coffee finder api
 app.get('/ourcoffee/:id',(req,res)=>{
     let optid=Number(req.params.id);
@@ -87,6 +89,14 @@ app.get('/menu',(req,res)=>{
 
 
 db.collection('Menu').find().toArray((err,result)=>{
+    if(err) console.log(err)
+    res.send(result);
+})
+})
+app.get('/menu/:id',(req,res)=>{
+let catID=Number(req.params.id);
+console.log("Category_id>>>>>",catID)
+db.collection('Menu').find({"category_id":catID}).toArray((err,result)=>{
     if(err) console.log(err)
     res.send(result);
 })
