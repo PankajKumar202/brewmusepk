@@ -101,6 +101,14 @@ db.collection('Menu').find({"category_id":catID}).toArray((err,result)=>{
     res.send(result);
 })
 })
+app.get('/menuItem/:id',(req,res)=>{
+    let itemID=Number(req.params.id);
+    console.log("_id>>>",itemID)
+    db.collection('Menu').find({"_id":itemID}).toArray((err,result)=>{
+        if(err) console.log(err)
+        res.send(result);
+    }) 
+})
 // filter 
 app.get('/filter',(req,res)=>{
     let categoryid=Number(req.query.category_id);
