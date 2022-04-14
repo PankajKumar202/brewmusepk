@@ -59,6 +59,30 @@ app.get('/store',(req,res)=>{
 
 
 // coffee finder api
+app.get('/coffeeCat',(req,res)=>{
+    db.collection('coffeefindcat').find().toArray((err,result)=>{
+        if(err) throw err;
+        res.send(result);
+    })
+
+})
+app.get('/coffeeCat/:id',(req,res)=>{
+    let finderID=Number(req.params.id);
+    console.log("finderID>>>",finderID);
+    db.collection('coffeefindcat').find({"finder_id":finderID}).toArray((err,result)=>{
+        if(err) throw err;
+        res.send(result);
+    })
+
+})
+app.get("/coffeefinder/:id",(req,res)=>{
+    let finderID=Number(req.params.id);
+    console.log("FinderID>>>",finderID)
+    db.collection('coffeefinder').find({"finder_id":finderID}).toArray((err,result)=>{
+        if(err) throw err;
+        res.send(result)
+    })
+})
 app.get('/ourcoffee/:id',(req,res)=>{
     let optid=Number(req.params.id);
     console.log(">>>>>optid",optid);
