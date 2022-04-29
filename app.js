@@ -110,8 +110,6 @@ app.get('/category',(req,res)=>{
 })
 // coffee and food by Menu
 app.get('/menu',(req,res)=>{
-
-
 db.collection('Menu').find().toArray((err,result)=>{
     if(err) console.log(err)
     res.send(result);
@@ -300,6 +298,18 @@ app.get("/cards/:id",(req,res)=>{
         res.send(result);    
     })
 })
+// get gift Orders
+app.get('/giftOrder',(req,res)=>{
+    let email=req.query.email;
+    let query={}
+    if(email){
+        query={"email":email}
+    }
+    db.collection('Orders_gift').find(query).toArray((err,result)=>{
+        if(err) throw err;
+        res.send(result)
+    })
+})
 // Gift card based on user's selection
 app.post('/giftcard',(req,res)=>{
     console.log(req.body);
@@ -331,7 +341,7 @@ app.delete(`/deletegiftOrder`,(req,res)=>{
     })
 })
 // Update Api
-app.put('/updategiftOrder/:id',(req,res)=>{
+app.patch('/updategiftOrder/:id',(req,res)=>{
     let oId=mongo.ObjectId(req.params.id)
     console.log(">>>_id",oId)
     let status=req.query.status?req.query.status:'Pending'
