@@ -377,7 +377,7 @@ app.get('/deliverOrder',(req,res)=>{
 app.post(`/placeOrder`,(req,res)=>{
     // let Oid=mongo.ObjectId(req.params.id);
  
-    db.collection('ordersmenu').insertOne(req.body,'UTF-8',(err,result)=>{
+    db.collection('ordersmenu').insertOne(req.body,(err,result)=>{
         if(err) throw err;
         res.send("Order Added");
     })
