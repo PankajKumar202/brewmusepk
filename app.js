@@ -303,7 +303,7 @@ app.get('/giftOrder',(req,res)=>{
     let email=req.query.email;
     let query={}
     if(email){
-        query={"email":email}
+        query={"Email":email}
     }
     db.collection('Orders_gift').find(query).toArray((err,result)=>{
         if(err) throw err;
@@ -361,7 +361,18 @@ app.patch('/updategiftOrder/:id',(req,res)=>{
     )
         
     })
-
+// get api for deliver orders
+app.get('/deliverOrder',(req,res)=>{
+    let email=req.query.email;
+    let query={}
+    if(email){
+        query={"email":email}
+    }
+    db.collection('ordersmenu').find(query).toArray((err,result)=>{
+        if(err) throw err;
+        res.send(result)
+    })
+})
 // ADD Route for placing order For Menu
 app.post(`/placeOrder`,(req,res)=>{
     // let Oid=mongo.ObjectId(req.params.id);
@@ -392,12 +403,12 @@ app.delete(`/deleteOrder`,(req,res)=>{
     })
 })
 // Update Api
-app.put('/updateOrder/:id',(req,res)=>{
+app.patch('/updateOrder/:id',(req,res)=>{
     let oId=mongo.ObjectId(req.params.id)
     console.log(">>>_id",oId)
     let status=req.query.status?req.query.status:'Pending'
     db.collection('ordersmenu').updateOne(
-        {_id:oId},
+        {id:oId},
         {$set:{
                 "status":status,
                 "bank_name":req.body.bank_name,

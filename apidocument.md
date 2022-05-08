@@ -68,6 +68,7 @@ For Price: https://brewmusepk.herokuapp.com/filter?bprice=200&aprice=350
 For Ratings:https://brewmusepk.herokuapp.com/filter?arate=4 https://brewmuse.herokuapp.com/filter?brate=4
 
 To place order (Post Call): https://brewmusepk.herokuapp.com/placeOrder
+for getting orders new= https://brewmusepk.herokuapp.com/deliverOrder?email=parya209@gmail.com
 
 Menu item based on user's selection (Post Call): https://brewmusepk.herokuapp.com/menuItem
 
@@ -76,7 +77,7 @@ Update Order (Put Call): https://brewmusepk.herokuapp.com/updateOrder/62095d8f75
 Delete Order: https://brewmusepk.herokuapp.com/deleteOrder
 
 Page 6: Rewards
-
+giftORder:https://brewmusepk.herokuapp.com/giftOrder?Email=parya209@gmail.com
 List of gift cards:https://brewmusepk.herokuapp.com/cards/1
 List of gift cards category:https://brewmusepk.herokuapp.com/giftCategory/1
 Gift card based on user's selection (Post Call): https://brewmusepk.herokuapp.com/giftcard
