@@ -368,7 +368,7 @@ app.get('/deliverOrder',(req,res)=>{
     if(email){
         query={"email":email}
     }
-    db.collection('ordersmenu').find(query).toArray((err,result)=>{
+    db.collection('Orders_Menu').find(query).toArray((err,result)=>{
         if(err) throw err;
         res.send(result)
     })
@@ -377,7 +377,7 @@ app.get('/deliverOrder',(req,res)=>{
 app.post(`/placeOrder`,(req,res)=>{
     // let Oid=mongo.ObjectId(req.params.id);
  
-    db.collection('ordersmenu').insertOne(req.body,(err,result)=>{
+    db.collection('Orders_Menu').insertOne(req.body,(err,result)=>{
         if(err) throw err;
         res.send("Order Added");
     })
@@ -397,7 +397,7 @@ app.delete(`/deleteOrder`,(req,res)=>{
     if(email){
         query={"email":email}
     }
-    db.collection('ordersmenu').deleteOne(query,(err,result)=>{
+    db.collection('Orders_Menu').deleteOne(query,(err,result)=>{
        if(err) console.log(err)
        res.send(result)
     })
@@ -407,7 +407,7 @@ app.patch('/updateOrder/:id',(req,res)=>{
     let oId=mongo.ObjectId(req.params.id)
     console.log(">>>_id",oId)
     let status=req.query.status?req.query.status:'Pending'
-    db.collection('ordersmenu').updateOne(
+    db.collection('Orders_Menu').updateOne(
         {id:oId},
         {$set:{
                 "status":status,
