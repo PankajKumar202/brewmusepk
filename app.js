@@ -303,7 +303,7 @@ app.get('/giftOrder',(req,res)=>{
     let email=req.query.email;
     let query={}
     if(email){
-        query={email:email}
+        query={senderEmail:email}
     }
     db.collection('Orders_gift').find(query).toArray((err,result)=>{
         if(err) throw err;
@@ -342,7 +342,7 @@ app.delete(`/deletegiftOrder`,(req,res)=>{
 })
 // Update Api
 app.patch('/updategiftOrder/:id',(req,res)=>{
-    let oId=mongo.ObjectId(req.params.id)
+    let oId=req.params.id
     console.log(">>>_id",oId)
     let status=req.query.status?req.query.status:'Pending'
     db.collection('Orders_gift').updateOne(
@@ -404,11 +404,11 @@ app.delete(`/deleteOrder`,(req,res)=>{
 })
 // Update Api
 app.patch('/updateOrder/:id',(req,res)=>{
-    let oId=mongo.ObjectId(req.params.id)
+    let oId=req.params.id;
     console.log(">>>_id",oId)
     let status=req.query.status?req.query.status:'Pending'
     db.collection('Orders_Menu').updateOne(
-        {id:oId},
+        {_id:oId},
         {$set:{
                 "status":status,
                 "bank_name":req.body.bank_name,
