@@ -303,7 +303,7 @@ app.get('/giftOrder',(req,res)=>{
     let email=req.query.email;
     let query={}
     if(email){
-        query={"Email":email}
+        query={email:email}
     }
     db.collection('Orders_gift').find(query).toArray((err,result)=>{
         if(err) throw err;
