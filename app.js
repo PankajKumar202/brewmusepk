@@ -342,15 +342,16 @@ app.delete(`/deletegiftOrder`,(req,res)=>{
 })
 // Update Api
 app.patch('/updategiftOrder/:id',(req,res)=>{
-    let oId=req.params.id
+    let oId=Number(req.params.id);
     console.log(">>>_id",oId)
-    let status=req.query.status?req.query.status:'Pending'
+    let status=req.body.status?req.body.status:'Pending'
     db.collection('Orders_gift').updateOne(
-        {_id:oId},
+        {id:oId},
         {$set:{
                 "status":status,
                 "bank_name":req.body.bank_name,
-                "bank_status":req.body.bank_status
+                "bank_status":req.body.bank_status,
+                "date":req.body.date
             
         }},(err,result)=>{
             if(err) throw err
@@ -404,15 +405,16 @@ app.delete(`/deleteOrder`,(req,res)=>{
 })
 // Update Api
 app.patch('/updateOrder/:id',(req,res)=>{
-    let oId=req.params.id;
+    let oId=Number(req.params.id);
     console.log(">>>_id",oId)
-    let status=req.query.status?req.query.status:'Pending'
+    let status=req.body.status?req.body.status:'Pending'
     db.collection('Orders_Menu').updateOne(
-        {_id:oId},
+        {id:oId},
         {$set:{
                 "status":status,
                 "bank_name":req.body.bank_name,
-                "bank_status":req.body.bank_status
+                "bank_status":req.body.bank_status,
+                "date":req.body.date
             
         }},(err,result)=>{
             if(err) throw err
