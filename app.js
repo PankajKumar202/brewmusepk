@@ -39,10 +39,16 @@ app.get('/store',(req,res)=>{
     let city=Number(req.query.city_id);
     let cityname=req.query.city_name;
     let name=req.query.name;
+    let skip=0;
+    let limit=10000000;
     let query={};
     if(city&&cityname&&name){
         query={city_id:city,
             city_name:cityname}
+    }
+    if(req.query.skip && req.query.limit){
+        skip=Number(req.query.skip);
+        limit=Number(req.query.limit)
     }
     else if(city){
         query={city_id:city}
@@ -51,7 +57,7 @@ app.get('/store',(req,res)=>{
     }else if(name){
         query={name:name}
     }
-    db.collection('store').find(query).toArray((err,result)=>{
+    db.collection('store').find(query).skip(skip).limit(limit).toArray((err,result)=>{
         if(err) throw err;
         res.send(result);
     })
@@ -138,10 +144,16 @@ app.get('/filter',(req,res)=>{
    let sort={Ratings:1}
    let brate=Number(req.query.brate);  
     let arate=Number(req.query.arate);
+    let skip=0;
+    let limit=10000000;
  
     let query={}
     if(categoryid){
         query={category_id:categoryid}
+    }
+    if(req.query.skip && req.query.limit){
+        skip=Number(req.query.skip);
+        limit=Number(req.query.limit)
     }
     if(sort){
         sort={Ratings:req.query.sort}
@@ -157,7 +169,7 @@ app.get('/filter',(req,res)=>{
      if(item_type){
         query={type:item_type}
     }
-        db.collection('menu').find(query).sort(sort).toArray((err,result)=>{
+        db.collection('menu').find(query).sort(sort).skip(skip).limit(limit).toArray((err,result)=>{
         if(err) throw err;
         res.send(result)
     })
