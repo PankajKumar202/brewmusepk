@@ -115,8 +115,9 @@ app.get('/category',(req,res)=>{
     })
 })
 // coffee and food by Menu
-app.get('/menu',(req,res)=>{
-db.collection('Menu').find().toArray((err,result)=>{
+app.get('/Menu',(req,res)=>{
+    let limit=7
+db.collection('Menu').find().limit(limit).toArray((err,result)=>{
     if(err) console.log(err)
     res.send(result);
 })
@@ -169,7 +170,7 @@ app.get('/filter',(req,res)=>{
      if(item_type){
         query={type:item_type}
     }
-        db.collection('menu').find(query).sort(sort).skip(skip).limit(limit).toArray((err,result)=>{
+        db.collection('Menu').find(query).sort(sort).skip(skip).limit(limit).toArray((err,result)=>{
         if(err) throw err;
         res.send(result)
     })
